@@ -1,0 +1,65 @@
+Robin Edens Assignment 4 - CSIS 252
+------------------------------------------------------------------------
+This project is a followup to Assignment 4 that deals with creating a 
+class the same as we did in Assignment 5 and replaces the struct with
+an Object Oriented approach for using constructors, getters, and setters
+to access the Unit, while also making it open enough to be useable for
+any of the units that were submitted for Assignment 1. 
+
+
+Input follows the same as Assignment 2-4, where a file is read from the 
+argument passed when executing the program (test case file is named
+"conversion, so prog6 conversion would run the project". Once this is 
+done, as before, input is received by the user entering two units of
+measurement separated by whitespace (e.g. 'foot meter') that are in
+the passed file, and the program checks to see if the units can be
+converted between.
+
+Output will consist of the output of the console to give a user-friendly
+layout and the results of the comparison between the two units that are
+given by the user. 
+
+
+
+file		function		description
+------------------------------------------------------------------------
+main.cpp	main			main function
+
+
+main.h		declarations		attributes for main.cpp
+------------------------------------------------------------------------
+array.cpp	array			fills array from file
+
+
+array.h		declarations	 	attributes for array.cpp
+------------------------------------------------------------------------
+compare.cpp 	compare			checks and comapares user
+					input from passed array
+
+compare.h	declarations 		attributes for compare.cpp
+------------------------------------------------------------------------
+open_file.cpp	open_file		opens file with conversion
+					values
+
+open_file.h	declarations		attributes for open_file.cpp
+------------------------------------------------------------------------
+prompt.cpp	prompt			loop for user input
+
+
+prompt.h	declarations		attributes for prompt.cpp
+------------------------------------------------------------------------
+size.cpp	size			gets size of conversion
+					file
+
+size.h		declarations		attributes for size.cpp
+------------------------------------------------------------------------
+unit.cpp	setName()		Unit class used to replace
+		getName()		the struct from Assignment 4
+		setType()		with object oriented design
+		getType()
+		setSize()
+		getSize()
+		typeEquals()
+
+unit.h 		declarations		declarations for unit.cpp	
+------------------------------------------------------------------------
